@@ -33,6 +33,7 @@ export class UploadComponent {
         }
       },
       error => {
+        this.ocrText = 'Error occurred while performing OCR - invalid format (Only images are accepted)'
         console.error('Error occurred while performing OCR:', error);
       }
     );
