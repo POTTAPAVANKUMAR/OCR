@@ -1,0 +1,6 @@
+pip install flask flask_restx pytesseract
+pip install flasgger
+pip install pytesseract
+pip install flask-cors
+
+http://127.0.0.1:5000/apidocs/

@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="upload-container">
+      <label for="fileInput" class="upload-label">
+        <span class="upload-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+            <path fill="none" d="M0 0h24v24H0V0z"/>
+            <path d="M20 19H4V5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-8h-2v8zM14 3v4h4l-4-4zm5 11h-2v-2h2v2z"/>
+          </svg>
+        </span>
+        <span class="upload-text">Choose a file</span>
+      </label>
+      <input type="file" id="fileInput" (change)="onFileSelected($event)">
+    </div>
+  
+    <div *ngIf="ocrText" class="result-container">
+      <h3 class="result-heading">Extracted Text:</h3>
+      <pre class="result-text">{{ ocrText }}</pre>
+    </div>
+  </div>
+  

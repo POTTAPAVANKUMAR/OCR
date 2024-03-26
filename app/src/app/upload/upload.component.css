@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .upload-container {
+    margin-bottom: 20px;
+  }
+  
+  .upload-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-icon {
+    margin-right: 10px;
+  }
+  
+  .upload-text {
+    font-size: 18px;
+  }
+  
+  .upload-label:hover {
+    background-color: #f9f9f9;
+  }
+  
+  #fileInput {
+    display: none;
+  }
+  
+  .result-container {
+    text-align: center;
+  }
+  
+  .result-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .result-text {
+    font-size: 18px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: auto;
+  }
+  
